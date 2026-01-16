@@ -78,4 +78,4 @@ function renderWithErrorHandling(array, listId) {
 renderWithErrorHandling(characters, "error-handling-list")
 
 // 6. Create a second array called "brokenCharacters" that intentionally contains objects with missing name properties (e.g., objects with only id and age). Pass this broken array to your error-handling functions from exercise 5. Verify that your error handling correctly identifies the missing name properties, logs appropriate error messages to the console, and displays those error messages in the HTML div element with id "broken-array-errors".
-renderWithErrorHandling(brokenCharacters, "broken-array-list", "broken-array-errors");
+renderWithErrorHandling(brokenCharacters, "broken-array-errors");
