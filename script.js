@@ -64,9 +64,9 @@ filterByAge(characters, 40, "age-filter-list");
 // 5. Enhance your rendering functions from exercises 3 and 4 with error handling logic. Before accessing the name property of each character object, check whether the "name" property exists. If a character object is missing the name property, use console.error() to log a descriptive error message to the console, and dynamically create and display the error message in the HTML div element with id "error-messages".
 function renderWithErrorHandling(array, listId) {
   const listTarget = document.getElementById(listId);
-  array.forEach((c, index) => {
+  array.forEach(c => {
     if (!c.name) {
-      console.error(`Error: Character at index ${index} is missing a name property.`);
+      console.error("Error: Character is missing a name property.");
     } else {
       const li = document.createElement("li");
       li.textContent = c.name;
