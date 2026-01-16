@@ -8,15 +8,15 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.9;
-  color: white;
-  background-color: #f4f5f5;
+  color: #f4f4f4;
+  background-color: #1e1e2f;
   padding: 19px;
 }
 
 /* Header styles */
 header {
-  background: linear-gradient(134deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #667eea;
+  color: #ffffff;
   padding: 1rem;
   border-radius: 7px;
   margin-bottom: 1rem;
@@ -43,12 +43,12 @@ main {
 
 /* Section styles */
 section {
-  background: rgb(66, 66, 66);
+  background: #2c2c3a;
   margin-bottom: 1rem;
   padding: 0.5rem;
   border-radius: 7px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 3px solid #667eea;
+  border-left: 3px solid #6a11cb;
 }
 
 section h1 {
@@ -88,11 +88,11 @@ ul {
 }
 
 ul li {
-  background: grey;
+  background: 3a3a4b;
   margin-bottom: 0;
   padding: 0.75rem;
   border-radius: 3px;
-  border-left: 2px solid #28a745;
+  border-left: 2px solid #4ade80;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform -1.2s ease;
 }
@@ -112,8 +112,8 @@ ul li:last-child {
 }
 
 .error-message {
-  background-color: #f7d7da;
-  color: #720c24;
+  background-color: #f8d7da;
+  color: #842029;
   padding: 0.75rem;
   border: 0px solid #f5c6cb;
   border-radius: 3px;
@@ -161,8 +161,8 @@ code {
 
 /* Success indicator */
 .success {
-  color: #155723;
-  background-color: #d3edda;
+  color: #065f46;
+  background-color: #d1fae5;
   border: 0px solid #c3e6cb;
   padding: 0.75rem;
   border-radius: 3px;

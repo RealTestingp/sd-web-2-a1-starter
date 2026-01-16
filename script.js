@@ -62,16 +62,12 @@ function filterByAge(array, ageThreshold, targetId) {
 filterByAge(characters, 40, "age-filter-list");
 
 // 5. Enhance your rendering functions from exercises 3 and 4 with error handling logic. Before accessing the name property of each character object, check whether the "name" property exists. If a character object is missing the name property, use console.error() to log a descriptive error message to the console, and dynamically create and display the error message in the HTML div element with id "error-messages".
-function renderWithErrorHandling(array, listId, errorId) {
+function renderWithErrorHandling(array, listId) {
   const listTarget = document.getElementById(listId);
-  const errorTarget = document.getElementById(errorId);
   array.forEach((c, index) => {
     if (!c.name) {
-      const errorMsg = `Error: Character at index ${index} is missing a name property.`;
-      console.error(errorMsg);
-      const p = document.createElement("p");
-      p.textContent = errorMsg;
-      errorTarget.appendChild(p);
+      // Only log error to console, do not display on page
+      console.error(`Error: Character at index ${index} is missing a name property.`);
     } else {
       const li = document.createElement("li");
       li.textContent = c.name;
@@ -79,7 +75,7 @@ function renderWithErrorHandling(array, listId, errorId) {
     }
   });
 }
-renderWithErrorHandling(characters, "error-handling-list", "error-messages")
+renderWithErrorHandling(characters, "error-handling-list")
 
 // 6. Create a second array called "brokenCharacters" that intentionally contains objects with missing name properties (e.g., objects with only id and age). Pass this broken array to your error-handling functions from exercise 5. Verify that your error handling correctly identifies the missing name properties, logs appropriate error messages to the console, and displays those error messages in the HTML div element with id "broken-array-errors".
 renderWithErrorHandling(brokenCharacters, "broken-array-list", "broken-array-errors");
