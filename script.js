@@ -66,7 +66,6 @@ function renderWithErrorHandling(array, listId) {
   const listTarget = document.getElementById(listId);
   array.forEach((c, index) => {
     if (!c.name) {
-      // Only log error to console, do not display on page
       console.error(`Error: Character at index ${index} is missing a name property.`);
     } else {
       const li = document.createElement("li");
